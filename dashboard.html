@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Finance Management</title>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+
+<body>
+    <div class ="container">
+        <div class="typewriter">
+            <header>
+            <h1>Expense Insight</h1>
+        </header>
+        </div>
+        <nav style="display: flex; justify-content: space-between;">
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="openTab(event,'home')">Dashboard</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='Income-Expense.html';">Income/Expense</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='ledger.html';">Ledger</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='loan.html';">Your Loans</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='help.html';">Help</button>
+        </nav>
+        <main>
+            <div id="home" class="tabcontent" style="display: block;">
+                <h2>Welcome to the Dashboard of your Finance Management</h2>
+                <p>Welcome to our Finance Management Dashboard, your one-stop solution for managing your personal finances efficiently and effectively. Our platform offers a range of tools designed to help you keep track of your income, expenses, and financial goals. Whether you're a student managing loans or someone looking to get a better handle on your finances, our dashboard is here to help.</p>
+                
+                <section>
+                    <h3>Features</h3>
+                    <ul>
+                        <li><strong>Record Entries:</strong> Easily record your financial transactions, categorize them as income or expense, and choose between cash or online transactions.</li>
+                        <li><strong>View Ledger:</strong> Keep a detailed and organized record of all your financial transactions in the ledger.</li>
+                        <li><strong>Manage Student Loans:</strong> Keep track of your student loans, including payment schedules and outstanding balances.</li>
+                        <li><strong>Get Help:</strong> Access a variety of resources and support to help you better manage your finances.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Getting Started</h3>
+                    <p>To get started, simply navigate to the Record Entries tab to begin inputting your financial transactions. Use the Ledger tab to review all your entries and keep track of your financial health. If you need any assistance, don't hesitate to visit the Help tab.</p>
+                </section>
+                
+                <section>
+                    <h3>Why Choose Us?</h3>
+                    <p>We understand that managing finances can be challenging, especially with the myriad of transactions and financial commitments you have. Our Finance Management Dashboard is designed to simplify this process, providing you with a clear, user-friendly interface and comprehensive tools to stay on top of your finances.</p>
+                    <p>Join thousands of users who have transformed their financial management with our dashboard. Start today and take control of your financial future!</p>
+                </section>
+                
+                <section>
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions, feedback, or need further assistance, feel free to <a href="#help" class="tablinks" onclick="openTab(event, 'help')">contact us</a>. We are here to help you make the most of our finance management tools.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

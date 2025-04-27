@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management - Ledger Entries</title>
+    <link rel="stylesheet" href="ledger.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="typewriter"> <header>
+            <h1>Your Ledger</h1>
+        </header>
+        </div>
+
+        <nav style="display: flex; justify-content: space-between;">
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='dashboard.html';">Dashboard</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='Income-Expense.html';">Income/Expense</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="openTab(event,'ledger')">Ledger</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='loan.html';">Your Loans</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='help.html';">Help</button>
+        </nav>
+
+        <main>
+            <div id="ledger" class="tabcontent" style="display: block;">
+                <h2>Ledger Entries</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ledgerBody">
+                    </tbody>
+                </table>
+                <div class="button-wrapper">
+                    <button id="deleteButton" style="background-color: #4facfe; color: white;" onclick="deleteLastEntry()">Delete Last Entry</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script>
+        const entries = JSON.parse(localStorage.getItem('entries')) || [];
+        const ledgerBody = document.getElementById('ledgerBody');
+
+        function renderEntries() {
+            ledgerBody.innerHTML = ''; // To Clear existing entries
+            entries.forEach(entry => {
+                const row = document.createElement('tr');
+                row.innerHTML = 
+                `    <td>${entry.date}</td>
+                    <td>${entry.type}</td>
+                    <td>${entry.category}</td>
+                    <td>${entry.amount}</td>
+                `;
+                ledgerBody.appendChild(row);
+            });
+        }
+
+        function deleteLastEntry() {
+            if (entries.length > 0) {
+                entries.pop(); 
+                localStorage.setItem('entries', JSON.stringify(entries)); 
+                renderEntries(); 
+            } else {
+                alert("No entries to delete.");
+            }
+        }
+        renderEntries();
+    </script>
+</body>
+</html>

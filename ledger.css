@@ -1,0 +1,113 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #030303;
+    height: 100%;
+}
+
+.container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    color: white;
+    font-size: 1.5em; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+.typewriter h1 {
+    color: #fff;
+    font-family: sans-serif;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: 
+      typing 2.5s steps(3000, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0480ec }
+  }
+ 
+
+nav {
+    width: 97%; 
+    margin: 0 auto 30px; 
+    background: #8a8989;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.tabcontent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #4facfe; 
+    color: white; 
+}
+
+td {
+    background: white; 
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  #deleteButton {
+    padding: 10px 20px;
+    border: none; 
+    background: #4facfe;
+    color: white;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    margin-right: 100px;  
+    margin-left: 100px;  
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loan.css">
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <div class="typewriter">
+    <h1>Simple Interest Calculator</h1>
+    </div>
+    <nav style="display: flex; justify-content: space-between;">
+        <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='dashboard.html';">Dashboard</button>
+        <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='Income-Expense.html';">Income/Expense</button>
+        <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='ledger.html';">Ledger</button>
+        <button class="tablinks" style="background-color: blue; color:white;" onclick="openTab(event,'loans')">Your Loans</button>
+        <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='help.html';">Help</button>
+    </nav>
+    <div class="container">
+        
+        <div class="input-field">
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" placeholder="Enter Principal Amount">
+        </div>
+        <div class="input-field">
+            <label for="rate">Rate of Interest (%):</label>
+            <input type="number" id="rate" placeholder="Enter Rate of Interest">
+        </div>
+        <div class="input-field">
+            <label for="duration">Duration (years):</label>
+            <input type="number" id="duration" placeholder="Enter Duration in Years">
+        </div>
+        <button id="calculate">Calculate Simple Interest</button>
+        <h2 id="result"></h2>
+    </div>
+    <script src="loan.js"></script>
+</body>
+</html>

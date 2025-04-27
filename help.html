@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Grid</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <div class="container">
+        <div class ="typewriter"><header>
+            <h1>Financial Management Articles</h1>
+        </header>
+        </div>
+        <nav style="display: flex; justify-content: space-between;">
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='dashboard.html';">Dashboard</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='Income-Expense.html';">Income/Expense</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='ledger.html';">Ledger</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='loan.html';">Your Loans</button>
+            <button class="tablinks" style="background-color: blue; color:white;" onclick="window.location.href='help.html';">Help</button>
+        </nav>
+        <main>
+            <h1 style="display: flex; align-items: center; justify-content: center; height: 100px;">Click on the name to view the articles</h1>
+            <div class="grid-container">
+                <div class="grid-item" onclick="window.location.href='https:www.cnbc.com/select/budgeting-tips-for-college-students/'" style="display: flex; align-items: center; justify-content: center; height: 100px;"><b>Budgeting Tips</b></div>
+                <div class="grid-item" onclick="window.location.href='https:www.savingforcollege.com/article/how-do-student-loans-work'" style="display: flex; align-items: center; justify-content: center; height: 100px;"><b>Student Loans</b></div>
+                <div class="grid-item" onclick="window.location.href='https:consumer.ftc.gov/articles/understanding-your-credit'" style="display: flex; align-items: center; justify-content: center; height: 100px;"><b>Understanding Your Credit</b></div>
+                <div class="grid-item" onclick="window.location.href='https:www.investopedia.com/terms/f/financial_plan.asp'" style="display: flex; align-items: center; justify-content: center; height: 100px;"><b>Financial Planning</b></div>
+                <div class="grid-item" onclick="window.location.href='https:www.investopedia.com/difference-between-needs-and-wants-8612333'" style="display: flex; align-items: center; justify-content: center; height: 100px;"><b>Needs & Wants</b></div>
+                <div class="grid-item" onclick="window.location.href='https:www.investopedia.com/financial-edge/0712/money-management-for-college-students.aspx'" style="display: flex; align-items: center; justify-content: center; height: 100px;"><b>Money Management</b></div>
+            </div>
+        </main>
+    </div>
+    <script src="help.js"></script>
+</body>
+</html>
