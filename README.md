@@ -1,0 +1,3 @@
+This is a Web-App named Expense_Insight I built as my minor prject,this project is for managing your personal finances efficiently and effectively. 
+This Web-app offers a range of tools designed to help you keep track of your income and expenses for your financial goals. 
+Whether you're a student managing loans or someone looking to get a better handle on your finances, this Web-app will help you...
